@@ -113,6 +113,111 @@
         .space-y-4 > :not([hidden]) ~ :not([hidden]) {
             margin-top: 1.25rem;
         }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .max-w-3xl {
+                max-width: 98vw !important;
+            }
+            main.glass {
+                padding: 1.2rem !important;
+                margin-top: 5.5rem !important;
+            }
+            .navbar-glass .max-w-3xl {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                padding: 0.5rem 1rem !important;
+            }
+            .navbar-glass span {
+                font-size: 1.2rem !important;
+            }
+            .navbar-glass .flex.gap-4 {
+                gap: 0.5rem !important;
+                font-size: 0.98rem !important;
+            }
+            header.flex {
+                flex-direction: column;
+                align-items: center;
+            }
+            header .w-36, header .h-36 {
+                width: 90px !important;
+                height: 90px !important;
+            }
+            h1.text-4xl {
+                font-size: 1.5rem !important;
+            }
+            .section-title {
+                font-size: 1.1rem !important;
+                margin-bottom: 1.2rem !important;
+            }
+            section {
+                margin-bottom: 2rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+            .skill-badge {
+                font-size: 0.85rem !important;
+                padding: 0.3rem 0.8rem !important;
+            }
+            .flex.flex-wrap.gap-3 {
+                gap: 0.5rem !important;
+            }
+            .flex.gap-8 {
+                gap: 0.7rem !important;
+                flex-wrap: wrap;
+            }
+            .social-link {
+                font-size: 0.95rem !important;
+                padding: 0.4rem 0.8rem !important;
+            }
+        }
+        @media (max-width: 480px) {
+            main.glass {
+                padding: 0.5rem !important;
+                margin-top: 4.5rem !important;
+            }
+            .navbar-glass .max-w-3xl {
+                padding: 0.3rem 0.5rem !important;
+            }
+            .navbar-glass span {
+                font-size: 1rem !important;
+            }
+            .nav-link {
+                font-size: 0.95rem !important;
+                padding: 0.18rem 0.5rem !important;
+            }
+            .section-title {
+                font-size: 1rem !important;
+                padding-bottom: 0.3rem !important;
+            }
+            .skill-badge {
+                font-size: 0.75rem !important;
+                padding: 0.2rem 0.6rem !important;
+            }
+            .flex.flex-wrap.gap-3 {
+                gap: 0.3rem !important;
+            }
+            .flex.gap-8 {
+                gap: 0.4rem !important;
+            }
+            .social-link {
+                font-size: 0.88rem !important;
+                padding: 0.3rem 0.5rem !important;
+            }
+            header .w-36, header .h-36 {
+                width: 65px !important;
+                height: 65px !important;
+            }
+            h1.text-4xl {
+                font-size: 1.1rem !important;
+            }
+            .text-lg {
+                font-size: 0.98rem !important;
+            }
+            .text-xs {
+                font-size: 0.7rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -172,7 +277,7 @@
         <!-- Skills -->
         <section id="skills" class="mb-10">
             <h2 class="section-title">Skills</h2>
-            <div class="flex flex-wrap gap-3 justify-ce</li>nter">
+            <div class="flex flex-wrap gap-3 justify-center">
                 <span class="skill-badge">HTML</span>
                 <span class="skill-badge">CSS</span>
                 <span class="skill-badge">JavaScript</span>
