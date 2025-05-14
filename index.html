@@ -236,8 +236,25 @@
     <main class="max-w-3xl mx-auto mt-28 glass rounded-3xl p-10 shadow-lg">
         <!-- Header: Foto dan Nama -->
         <header class="flex flex-col items-center mb-10">
-            <div class="mb-4 relative">
-            <img src="./image/profile.jpg" class="w-36 h-36 rounded-full border-2 border-indigo-100 object-cover shadow-xl ring-2 ring-indigo-900">
+            <div class="mb-4 relative flex justify-center items-center">
+                <span 
+                    style="
+                        position: absolute;
+                        width: 110px;
+                        height: 110px;
+                        background: linear-gradient(135deg, #a5b4fc33 0%, #6366f133 100%);
+                        border-radius: 50%;
+                        z-index: 0;
+                        box-shadow: 0 2px 12px 0 #6366f122;
+                        border-bottom: 3px solid #6366f1;
+                    "
+                    class="profile-bg"
+                ></span>
+                <img 
+                    src="./image/profile.jpg" 
+                    class="w-36 h-36 rounded-full border-2 border-indigo-100 object-cover shadow-xl ring-2 ring-indigo-900 relative z-10"
+                    style="background: #fff;"
+                >
             </div>
             <h1 class="text-4xl font-extrabold text-indigo-100 tracking-tight mb-1" style="color: #4f5bd5;">Dava Aditya Perdana</h1>
             <p class="text-lg text-indigo-400 font-semibold">Mahasiswa IT</p>
